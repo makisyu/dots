@@ -1,0 +1,12 @@
+defutf8 on
+defencoding utf8
+encoding utf8 utf8
+defkanji utf8
+
+escape ^Tt
+defscrollback 100000
+altscreen on
+
+caption always "%?%F%{b dc}%?%?%h%:%t (screen #%n)%?%{-}"
+hardstatus alwayslastline '%-w%{b wk}%n %t%{-}%+w%=%{b .B}%Y%{-}/%{b .m}%m%{-}/%{b .c}%d%{-}(%{b .y}%D%{-}) %{b .g}%c:%s%{-}'
+
