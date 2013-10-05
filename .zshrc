@@ -40,7 +40,7 @@ else
 fi
 
 local return_code="%(?..%B%F{red}:( %?%f%b)"
-PROMPT='%B%F{cyan}%n%f%b%F{yellow}@%f%B%F{blue}%m%f%b:%B%F{green}%~%f%b %F{${CARETCOLOR}}%#%f '
+PROMPT='%F{cyan}%n%f%F{yellow}@%f%F{blue}%m%f:%F{green}%~%f %F{${CARETCOLOR}}%#%f '
 RPROMPT='`echo_rprompt` ${return_code} %D - %*'
 
 HISTFILE=~/.zsh_history
