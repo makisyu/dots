@@ -1,4 +1,3 @@
-# Created by newuser for 4.3.10
 autoload -U compinit
 compinit
 
@@ -7,12 +6,7 @@ setopt prompt_subst
 
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git
-
-# 下のformatsの値をそれぞれの変数に入れてくれる機能の、変数の数の最大。
-# デフォルトだと2くらいなので、指定しておかないと、下のformatsがほぼ動かない。
 zstyle ':vcs_info:*' max-exports 7
-# 左から順番に、vcs_info_msg_{n}_ という名前の変数に格納されるので、下で利用する
-# 状態が特殊な場合のformats
 zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' formats '%R' '%S' '%b' '%s' '%c' '%u'
 zstyle ':vcs_info:*' actionformats '%R' '%S' '%b|%a' '%s' '%c' '%u'
@@ -51,8 +45,4 @@ bindkey -e
 
 export LESSOPEN="| src-hilite-lesspipe.sh %s"
 export LESS=' -R '
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
 alias tig='tig --all'
-alias python='python3'
-
