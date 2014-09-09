@@ -1,8 +1,16 @@
 autoload -U compinit
 compinit
 
+#autoload predict-on
+#predict-on
+
 setopt magic_equal_subst
 setopt prompt_subst
+
+setopt auto_cd
+setopt auto_pushd
+setopt correct
+setopt list_packed
 
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git
