@@ -50,7 +50,7 @@ SAVEHIST=$HISTSIZE
 
 bindkey -e
 
-export LESSOPEN="| .lessfilter %s"
+export LESSOPEN="| ~/.lessfilter %s"
 export LESS=' -R '
 export CSCOPE_EDITOR=vim
 
