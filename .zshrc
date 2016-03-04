@@ -50,10 +50,8 @@ SAVEHIST=$HISTSIZE
 
 bindkey -e
 
-export LESSOPEN="| ~/.lessfilter %s"
+export LESSOPEN=' | src-hilite-lesspipe.sh %s'
 export LESS=' -R '
 export CSCOPE_EDITOR=vim
 
 alias tig='tig --all'
-alias pss='ps -elF'
-alias psss='ps -elFLm'
