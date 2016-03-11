@@ -50,7 +50,7 @@ SAVEHIST=$HISTSIZE
 
 bindkey -e
 
-export LESSOPEN=' | src-hilite-lesspipe.sh %s'
+export LESSOPEN='| src-hilite-lesspipe.sh %s'
 export LESS=' -R '
 export CSCOPE_EDITOR=vim
 
