@@ -42,7 +42,7 @@ fi
 
 local return_code="%(?..%B%F{red}:( %?%f%b)"
 PROMPT='%F{cyan}%n%f%F{yellow}@%f%F{blue}%m%f:%F{green}%~%f %F{${CARETCOLOR}}%#%f '
-RPROMPT='`echo_rprompt` ${return_code} %D - %*'
+RPROMPT='`echo_rprompt` ${return_code} %D %*'
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000000
@@ -52,5 +52,6 @@ bindkey -e
 
 export LESSOPEN='| src-hilite-lesspipe.sh %s'
 export LESS='-R -M'
+export PATH=/usr/local/opt/curl-openssl/bin:$PATH
 
 alias tig='tig --all'
