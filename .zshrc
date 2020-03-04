@@ -50,8 +50,8 @@ SAVEHIST=$HISTSIZE
 
 bindkey -e
 
-export LESSOPEN='| src-hilite-lesspipe.sh %s'
+export LESSOPEN="|/usr/local/bin/lesspipe.sh %s" LESS_ADVANCED_PREPROCESSOR=1
 export LESS='-R -M'
-export PATH=/usr/local/opt/curl-openssl/bin:$PATH
+export PATH=/usr/local/opt/curl-openssl/bin:$HOME/.local/bin:$PATH
 
 alias tig='tig --all'
